@@ -1,0 +1,204 @@
+
+*{
+    margin: 0;
+
+}
+
+body{
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+.navbar{
+    background-color: #e0a353;
+    width: 100%;
+}
+
+.space{
+    padding: 0 16px;
+}
+
+.navbar-containter{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+    height:72px;
+    padding-bottom: 3px;
+    
+
+}
+
+
+.navbar-button{
+    cursor: pointer;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    margin-left: 24px;
+    color: #000000;
+}
+
+
+.name{
+width: auto;
+height: 20px;
+margin-left: 24px;
+display: block;
+}
+
+
+.register{
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 12px 12px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 36px;
+    width: 116.27px;
+    border-radius: 500px;
+    font-weight: 500;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-left: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+}
+
+
+.main-background{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.main-content{
+    top: 104px;
+    padding: 0 16px;
+    color: #000000;
+    position: absolute;
+}
+
+.text-order{
+    font-family: UberMove, sans-serif;
+    font-weight:700;
+    line-height: 44px;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.delivery-address{
+    padding: 8px 0;
+    display: block;
+    
+}
+
+
+.delivery-address-field{
+    position: sticky;
+    padding-left: 4px;
+    height: 56px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+   
+
+
+}
+
+.delivery-address-icon{
+
+    margin: 12px;
+    flex:none;
+    width: 24px;
+    height: 24px;
+}
+
+.delivery-address-text{
+    color: #545454;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.delivery-now{
+    background-color: #FFFFFF;
+}
+
+.delivery-now-field{
+    height: 56px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+
+.delivery-now-icon{
+    height: 48px;
+    width: 48px;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery-now-icon-size{
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+}
+
+
+.delivery-now-elements{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.delivery-now-text{
+    line-height: 20px;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    display: flex;
+}
+
+
+.delivery-now-more{
+    margin-left: 4px;
+    height: 48px;
+    width: 48px;
+}
+
+
+.icon-more{
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+}
