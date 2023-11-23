@@ -68,10 +68,36 @@ margin-left: 24px;
 display: block;
 }
 
+.spacer{
+    flex: 1;
+}
+
+.login{
+    background-color: #FFFFFF;
+    white-space: nowrap;
+    height: 36px;
+    padding: 12px 12px;
+    display: inline-flex;
+    border-radius: 500px;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000000;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.login svg{
+    height: 16px;
+    width: 16px;
+    fill: currentColor;
+}
+
+
 
 .register{
-    display: flex;
-    position: absolute;
+    display: inline-flex;
     right: 0;
     padding: 12px 12px;
     background-color: #000000;
