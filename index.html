@@ -7,6 +7,135 @@
     <title>Uber Eats | Food Delivery and Takeout | Order Online from Restaurants Near You</title>
 </head>
 <body>
+<div class="delivery-address-open" id="address">
+        <div class="delivery-address-display">
+            <label class="address-display-text">Dostarczyć do</label>
+        
+    <div class="address-display-search">
+        <div class="search-container">
+
+        <div class="search-svg"> 
+            <div class="search-svg-fix"> 
+                <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="m20.8333 19-3.6666-3.6667c.9167-1.3333 1.4999-2.9166 1.4999-4.6666 0-4.33334-3.5833-7.9167-7.9167-7.9167-4.33331 0-7.91665 3.58336-7.91665 7.9167 0 4.3333 3.58334 7.9167 7.91665 7.9167 1.75 0 3.3334-.5834 4.6668-1.5001l3.6666 3.6667zm-15.50005-8.25c0-2.99999 2.41667-5.41666 5.41665-5.41666 3 0 5.4167 2.41667 5.4167 5.41666 0 3-2.4167 5.4167-5.4167 5.4167-2.99998 0-5.41665-2.4167-5.41665-5.4167z" fill="currentColor"></path></svg>
+            </div>   
+        </div>
+
+                    <div class="search-text">
+                        <input role="combobox" aria-expanded="false" autocomplete="off" placeholder="Wpisz adres dostawy" value="">   
+                    </div>
+        </div>
+
+
+    </div>   
+        </div>
+<button aria-label="Zamknij" data-testid="close-button" class="button-close-x" onclick="closeAddress()">
+    <div class="button-close-x-position"><svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="m19.5831 6.24931-1.8333-1.83329-5.75 5.83328-5.75-5.83328-1.8333 1.83329 5.8333 5.74999-5.8333 5.75 1.8333 1.8333 5.75-5.8333 5.75 5.8333 1.8333-1.8333-5.8333-5.75z" fill="#000000"></path></svg>
+    </div>
+</button>
+</div>
+
+<div class="delivery-now-open" id="now">
+    <div class="delivery-address-display">
+        <h1 class="now-display-text">Wybierz godzinę</h1>
+
+          <div class="now-date-container">
+            <div class="now-date">
+                <select aria-label="Wybierz datę dostawy" class="now-date-select">
+                    <option value="2023-11-24">Dzisiaj, pt., 24 lis</option>
+                    <option value="2023-11-25">Jutro, sob., 25 lis</option>
+                    <option value="2023-11-26">niedz., 26 lis</option>
+                    <option value="2023-11-27">pon., 27 lis</option>
+                    <option value="2023-11-28">wt., 28 lis</option>
+                    <option value="2023-11-29">śr., 29 lis</option>
+                    <option value="2023-11-30">czw., 30 lis</option></select>
+                    <div class="now-date-icon">
+                            <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17 11.7494V14.916L12 11.0827L7 14.916V11.7494L12 7.91602L17 11.7494Z" fill="currentColor" transform="rotate(180, 12, 12)"></path>
+                            </svg>   
+                    </div>
+            </div>
+                        <div class="now-date" style="margin-bottom: 0px;">
+                            <select aria-label="Wybierz czas dostawy" class="now-date-select">
+                                <option value="{&quot;startTime&quot;:705,&quot;startTimeMs&quot;:1700822700003,&quot;endTime&quot;:735}">11:45–12:15</option>
+                                <option value="{&quot;startTime&quot;:720,&quot;startTimeMs&quot;:1700823600003,&quot;endTime&quot;:750}">12:00–12:30</option>
+                                <option value="{&quot;startTime&quot;:735,&quot;startTimeMs&quot;:1700824500003,&quot;endTime&quot;:765}">12:15–12:45</option>
+                                <option value="{&quot;startTime&quot;:750,&quot;startTimeMs&quot;:1700825400003,&quot;endTime&quot;:780}">12:30–13:00</option>
+                                <option value="{&quot;startTime&quot;:765,&quot;startTimeMs&quot;:1700826300003,&quot;endTime&quot;:795}">12:45–13:15</option>
+                                <option value="{&quot;startTime&quot;:780,&quot;startTimeMs&quot;:1700827200003,&quot;endTime&quot;:810}">13:00–13:30</option>
+                                <option value="{&quot;startTime&quot;:795,&quot;startTimeMs&quot;:1700828100003,&quot;endTime&quot;:825}">13:15–13:45</option>
+                                <option value="{&quot;startTime&quot;:810,&quot;startTimeMs&quot;:1700829000003,&quot;endTime&quot;:840}">13:30–14:00</option>
+                                <option value="{&quot;startTime&quot;:825,&quot;startTimeMs&quot;:1700829900003,&quot;endTime&quot;:855}">13:45–14:15</option>
+                                <option value="{&quot;startTime&quot;:840,&quot;startTimeMs&quot;:1700830800003,&quot;endTime&quot;:870}">14:00–14:30</option>
+                                <option value="{&quot;startTime&quot;:855,&quot;startTimeMs&quot;:1700831700003,&quot;endTime&quot;:885}">14:15–14:45</option>
+                                <option value="{&quot;startTime&quot;:870,&quot;startTimeMs&quot;:1700832600003,&quot;endTime&quot;:900}">14:30–15:00</option>
+                                <option value="{&quot;startTime&quot;:885,&quot;startTimeMs&quot;:1700833500003,&quot;endTime&quot;:915}">14:45–15:15</option>
+                                <option value="{&quot;startTime&quot;:900,&quot;startTimeMs&quot;:1700834400003,&quot;endTime&quot;:930}">15:00–15:30</option>
+                                <option value="{&quot;startTime&quot;:915,&quot;startTimeMs&quot;:1700835300003,&quot;endTime&quot;:945}">15:15–15:45</option>
+                                <option value="{&quot;startTime&quot;:930,&quot;startTimeMs&quot;:1700836200003,&quot;endTime&quot;:960}">15:30–16:00</option>
+                                <option value="{&quot;startTime&quot;:945,&quot;startTimeMs&quot;:1700837100003,&quot;endTime&quot;:975}">15:45–16:15</option>
+                                <option value="{&quot;startTime&quot;:960,&quot;startTimeMs&quot;:1700838000003,&quot;endTime&quot;:990}">16:00–16:30</option>
+                                <option value="{&quot;startTime&quot;:975,&quot;startTimeMs&quot;:1700838900003,&quot;endTime&quot;:1005}">16:15–16:45</option>
+                                <option value="{&quot;startTime&quot;:990,&quot;startTimeMs&quot;:1700839800003,&quot;endTime&quot;:1020}">16:30–17:00</option>
+                                <option value="{&quot;startTime&quot;:1005,&quot;startTimeMs&quot;:1700840700003,&quot;endTime&quot;:1035}">16:45–17:15</option>
+                                <option value="{&quot;startTime&quot;:1020,&quot;startTimeMs&quot;:1700841600003,&quot;endTime&quot;:1050}">17:00–17:30</option>
+                                <option value="{&quot;startTime&quot;:1035,&quot;startTimeMs&quot;:1700842500003,&quot;endTime&quot;:1065}">17:15–17:45</option>
+                                <option value="{&quot;startTime&quot;:1050,&quot;startTimeMs&quot;:1700843400003,&quot;endTime&quot;:1080}">17:30–18:00</option>
+                                <option value="{&quot;startTime&quot;:1065,&quot;startTimeMs&quot;:1700844300003,&quot;endTime&quot;:1095}">17:45–18:15</option>
+                                <option value="{&quot;startTime&quot;:1080,&quot;startTimeMs&quot;:1700845200003,&quot;endTime&quot;:1110}">18:00–18:30</option>
+                                <option value="{&quot;startTime&quot;:1095,&quot;startTimeMs&quot;:1700846100003,&quot;endTime&quot;:1125}">18:15–18:45</option>
+                                <option value="{&quot;startTime&quot;:1110,&quot;startTimeMs&quot;:1700847000003,&quot;endTime&quot;:1140}">18:30–19:00</option>
+                                <option value="{&quot;startTime&quot;:1125,&quot;startTimeMs&quot;:1700847900003,&quot;endTime&quot;:1155}">18:45–19:15</option>
+                                <option value="{&quot;startTime&quot;:1140,&quot;startTimeMs&quot;:1700848800003,&quot;endTime&quot;:1170}">19:00–19:30</option>
+                                <option value="{&quot;startTime&quot;:1155,&quot;startTimeMs&quot;:1700849700003,&quot;endTime&quot;:1185}">19:15–19:45</option>
+                                <option value="{&quot;startTime&quot;:1170,&quot;startTimeMs&quot;:1700850600003,&quot;endTime&quot;:1200}">19:30–20:00</option>
+                                <option value="{&quot;startTime&quot;:1185,&quot;startTimeMs&quot;:1700851500003,&quot;endTime&quot;:1215}">19:45–20:15</option>
+                                <option value="{&quot;startTime&quot;:1200,&quot;startTimeMs&quot;:1700852400003,&quot;endTime&quot;:1230}">20:00–20:30</option>
+                                <option value="{&quot;startTime&quot;:1215,&quot;startTimeMs&quot;:1700853300003,&quot;endTime&quot;:1245}">20:15–20:45</option>
+                                <option value="{&quot;startTime&quot;:1230,&quot;startTimeMs&quot;:1700854200003,&quot;endTime&quot;:1260}">20:30–21:00</option>
+                                <option value="{&quot;startTime&quot;:1245,&quot;startTimeMs&quot;:1700855100003,&quot;endTime&quot;:1275}">20:45–21:15</option>
+                                <option value="{&quot;startTime&quot;:1260,&quot;startTimeMs&quot;:1700856000003,&quot;endTime&quot;:1290}">21:00–21:30</option>
+                                <option value="{&quot;startTime&quot;:1275,&quot;startTimeMs&quot;:1700856900003,&quot;endTime&quot;:1305}">21:15–21:45</option>
+                                <option value="{&quot;startTime&quot;:1290,&quot;startTimeMs&quot;:1700857800003,&quot;endTime&quot;:1320}">21:30–22:00</option>
+                                <option value="{&quot;startTime&quot;:1305,&quot;startTimeMs&quot;:1700858700003,&quot;endTime&quot;:1335}">21:45–22:15</option>
+                                <option value="{&quot;startTime&quot;:1320,&quot;startTimeMs&quot;:1700859600003,&quot;endTime&quot;:1350}">22:00–22:30</option>
+                                <option value="{&quot;startTime&quot;:1335,&quot;startTimeMs&quot;:1700860500003,&quot;endTime&quot;:1365}">22:15–22:45</option>
+                                <option value="{&quot;startTime&quot;:1350,&quot;startTimeMs&quot;:1700861400003,&quot;endTime&quot;:1380}">22:30–23:00</option>
+                                <option value="{&quot;startTime&quot;:1365,&quot;startTimeMs&quot;:1700862300003,&quot;endTime&quot;:1395}">22:45–23:15</option>
+                                <option value="{&quot;startTime&quot;:1380,&quot;startTimeMs&quot;:1700863200003,&quot;endTime&quot;:1410}">23:00–23:30</option>
+                                <option value="{&quot;startTime&quot;:1395,&quot;startTimeMs&quot;:1700864100003,&quot;endTime&quot;:1425}">23:15–23:45</option>
+                                <option value="{&quot;startTime&quot;:1410,&quot;startTimeMs&quot;:1700865000003,&quot;endTime&quot;:1440}">pt., 23:30–sob., 00:00</option>
+                            </select>
+            <div class="now-date-icon">
+                <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17 11.7494V14.916L12 11.0827L7 14.916V11.7494L12 7.91602L17 11.7494Z" fill="currentColor" transform="rotate(180, 12, 12)"></path>
+                </svg>   
+            </div>                
+                        </div>
+          </div>
+
+
+    <div>
+        <div class="now-bottom-items">
+               <button class="now-shedule">Zaplanuj</button>
+               <button class="now-shedule" style="background: #EEEEEE; color: #000000; margin-bottom: 0px;">Dostarcz teraz</button>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+    <button aria-label="Zamknij" data-testid="close-button" class="button-close-x" onclick="closeNow()">
+        <div class="button-close-x-position"><svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="m19.5831 6.24931-1.8333-1.83329-5.75 5.83328-5.75-5.83328-1.8333 1.83329 5.8333 5.74999-5.8333 5.75 1.8333 1.8333 5.75-5.8333 5.75 5.8333 1.8333-1.8333-5.8333-5.75z" fill="#000000"></path></svg>
+        </div>
+    </button>
+
+</div>
+
+
+
 <div class="hamburger-container">
 <div class="hamburger-background" id="bg"  onclick="closebackground()"></div>
 <div class="hamburger-menu-overlay" id="menu">
@@ -84,7 +213,7 @@
 
             <h2 class="text-order">Zamów dostawę w Twojej okolicy</h2>
 
-<a class="delivery-address" href="https://www.ubereats.com/pl/delivery-details">
+<a class="delivery-address" onclick="openAddress()">
     <div class="delivery-address-field">
         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="delivery-address-icon"><g clip-path="url(#clip0)">
         <path d="M17.583 5.166a7.896 7.896 0 00-11.166 0c-3.084 3.083-3.084 8.167 0 11.25L12 21.999l5.583-5.666c3.084-3 3.084-8.084 0-11.167zM12 12.416c-.917 0-1.667-.75-1.667-1.667 0-.916.75-1.666 1.667-1.666s1.667.75 1.667 1.666c0 .917-.75 1.667-1.667 1.667z"></path></g><defs><clipPath id="clip0"><path transform="translate(2 2)" d="M0 0h20v20H0z"></path></clipPath></defs>
@@ -93,8 +222,7 @@
     </div>
 </a>
 
-
-<a class="delivery-now" href="https://www.ubereats.com/pl/delivery-details?next=%2Fpl">
+<a class="delivery-now" onclick="openNow()">
 <div class="delivery-now-field">
 <div class="delivery-now-icon">
 <div class="delivery-now-icon-size">
@@ -114,7 +242,7 @@
 </div>
 </a>
 
-<a class="search" href="ubereats.com/pl/delivery-details?next=%2Fpl">Wyszukaj restauracje</a>
+<a class="search" onclick="openAddress()">Wyszukaj restauracje</a>
 <div class="or-login">
 Lub 
 <a href="https://www.ubereats.com/login-redirect/?campaign=signin_universal_link&amp;marketing_vistor_id=51618c03-839e-4245-a32b-352d347fb0bd&amp;redirect=%2Fpl&amp;guest_mode=false&amp;app_clip=false">Zaloguj się</a>
