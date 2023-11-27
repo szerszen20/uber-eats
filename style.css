@@ -798,3 +798,55 @@ position: relative;
 	cursor: pointer;
 	font-weight: 500;
 }
+
+.footer{
+	border-top: 1px solid #E2E2E2;
+	margin-top: 64px;
+	padding: 64px 16px 80px;
+	background-color: #ffffff;
+	position: relative;
+	top: 856px;
+}
+
+.footer-img{
+	margin-bottom: 48px;
+	width: auto;
+	filter: unset;
+	height: 24px;
+}
+
+.footer-download{
+	margin-bottom: 64px;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 16px;
+}
+
+
+.footer-download img{
+	width: 100%;
+}
+
+.other-options{
+	margin-bottom: 64px;
+	display: flex;
+	flex-direction: column;
+}
+
+.other-options-text{
+	line-height: 24px;
+	font-weight: normal;
+	font-size: 16px;
+	margin-bottom: 16px;
+	display: flex;
+
+}
+
+.other-options-text-svg{
+	height: 16px;
+	width: 16px;
+}
+
+.other-options-text p{
+	margin-left: 8px;
+}
