@@ -688,7 +688,6 @@ button {
 	margin-right: 16px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 
@@ -716,4 +715,86 @@ button {
 
 .more-sections-space {
 	margin-top: 36px;
+}
+
+
+.more-sections-text-city{
+	line-height: 32px;
+	font-size: 24px;
+	font-weight: 700;
+	display: flex;
+}
+
+
+.more-sections-map{
+	margin-top: 16px;
+	height: 360px;
+}
+
+
+.map{
+z-index: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+position: relative;
+
+}
+
+.more-sections-cities{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6,1fr);
+	gap: 16px 8px;
+	grid-auto-flow: column;
+}
+
+.city-name{
+	line-height: 24px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.display-all-cities{
+	margin-top: 24px;
+	text-decoration: underline;
+	line-height: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 500;
+
+}
+
+
+.country-text{
+	line-height: 32px;
+	font-size: 24px;
+	font-weight: 700;
+
+}
+
+.country-list{
+	margin-top: 24px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(15,1fr);
+	gap: 24px 8px;
+	grid-auto-flow: column;
+
+}
+
+.country-list-text{
+	line-height: 24px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+.all-countries{
+	margin-top: 24px;
+	text-decoration: underline;
+	line-height: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 500;
 }
