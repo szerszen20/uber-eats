@@ -163,12 +163,21 @@ button {
 	margin-bottom: 24px;
 }
 
+.delivery-address-fixed{
+	display: none;
+	height: 72px;
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
 .delivery-address {
+	position: sticky;
 	cursor: pointer;
 	padding: 8px 0;
 	display: block;
-	position: sticky;
-	z-index: 6;
+	z-index: 3;
 }
 
 .delivery-address-field {
