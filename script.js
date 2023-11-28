@@ -1,23 +1,14 @@
-function openbackground() {
-    document.getElementById("bg").style.display = "flex";
-    document.body.style.overflow = "hidden";
-  }
-
-  function closebackground() {
-    document.getElementById("bg").style.display = "none";
-    document.getElementById("menu").style.display = "none";
-    document.body.style.overflow = "auto";
-
-  }
 
 
   function openhamburger() {
-    document.getElementById("menu").style.display = "flex";
+    document.getElementById("menu").classList.add("open");
+    document.getElementById("hamburger").classList.add("open2");
     document.body.style.overflow = "hidden";
   }
 
   function closehamburger() {
-    document.getElementById("menu").style.display = "none";
+    document.getElementById("menu").classList.remove("open");
+    document.getElementById("hamburger").classList.remove("open2");
     document.body.style.overflow = "auto";
   }
 
