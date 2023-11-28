@@ -683,7 +683,7 @@ button {
 	display: flex;
 }
 .more-sections-map {
-	margin-top: 16px;
+	margin: 16px 0px;
 	height: 360px;
 }
 .map {
