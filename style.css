@@ -921,5 +921,39 @@ button {
 	.delivery-address-icon{
 		margin: 16px;
 	}
-	
+	.download-app{
+		display: none;
+	}
+
+	.more-sections{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.services-section{
+		padding: 80px 0 0 0;
+	}
+	.graphics{
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 24px;
+		flex-direction: row;
+		padding-bottom: 120px;	
+	}
+
+	.more-sections-images{
+		width: 100%;
+
+	}
+	.more-sections-space{
+		margin-top: unset;
+		padding-left: 24px;
+	}
+	.more-sections-text-city{
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.more-sections-p1{
+		font-size: 28px;
+		line-height: 36px;
+	}
 }
