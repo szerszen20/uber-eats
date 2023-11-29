@@ -142,7 +142,7 @@ button {
 	bottom: 0;
 }
 .main-background-full{
-	visibility: hidden;
+	display: none;
 }
 .main-content {
 	top: 30px;
@@ -869,6 +869,7 @@ button {
 		visibility: hidden;
 	}
 	.main-background-full{
+		display: block;
 		visibility: visible;
 		width: 100%;
 		height: 100%;
@@ -877,6 +878,48 @@ button {
 		left: 0;
 		object-position: center;
 		object-fit: cover;
+	}
+	.main-content{
+		padding: 0px 40px;
+		top: 290px;
+	}
+	.text-order{
+		font-size: 52px;
+		line-height: 64px;
+		max-width: 60%;
+	}
+
+	.delivery-address-fixed{
+		min-width: 548px;
+	}
+	.delivery-address{
+	
+		padding-right: 8px;
+	}
+	.delivery-address-field{
+		padding-left: unset;
+		
+	}
+	.delivery-container{
+		display: flex;
+		max-height: 56px;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 40px;
 
 	}
+
+	.delivery-now{	
+		display: inline-flex;
+		
+	}
+	.search{
+		width: auto;
+		margin-top: 0;
+		margin-left: 8px;
+	}
+	.delivery-address-icon{
+		margin: 16px;
+	}
+	
 }
