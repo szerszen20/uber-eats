@@ -48,6 +48,8 @@ button {
 	background-color: #e2a257;
 	width: 100%;
 	position: relative;
+	transition: 0.3s;
+
 }
 .space {
 	padding: 0 16px;
@@ -82,6 +84,7 @@ button {
 	height: 20px;
 	margin-left: 28px;
 	display: block;
+	cursor: pointer;
 }
 
 .login {
@@ -314,7 +317,7 @@ button {
 	background: rgba(38, 38, 38, 0.8);
 	z-index: 60;
 	width: 100%;
-	height: 100%;
+	height: 400vh;
 	visibility: hidden;
 }
 
@@ -543,7 +546,7 @@ button {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 6;
+	z-index: 110;
 	color: #000000;
 	padding: 64px 16px 0px;
 	box-sizing: border-box;
@@ -620,6 +623,8 @@ button {
 	flex-direction: column;
 	margin: 0 16px;
 	background-color: #ffffff;
+	z-index: -3;
+	position: relative;
 }
 .download-app-logo {
 	display: flex;
@@ -850,6 +855,7 @@ button {
 	padding-bottom: 0;
 }
 
+
 @media (min-width: 1200px){
 	.name{
 		height: 24px;
@@ -861,7 +867,7 @@ button {
 	}
 	.navbar{
 		position: fixed;
-		z-index: 50;
+		z-index: 5;
 		background-color: unset;
 	}
 	.register{
@@ -947,6 +953,7 @@ button {
 	}
 	.services-section{
 		padding: 80px 0 0 0;
+		z-index: -3;
 	}
 	.graphics{
 		margin-top: 0;
@@ -1044,5 +1051,9 @@ button {
 	}
 	.options-fullscreen{
 		margin-left: 40px;
+	}
+	.navbar-fullscreen{
+		background-color: #ffffff;
+		transition: 0.3s;
 	}
 }
