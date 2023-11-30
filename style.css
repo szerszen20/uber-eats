@@ -728,6 +728,18 @@ button {
 	cursor: pointer;
 	font-weight: 500;
 }
+.display-all-cities-asdsadasdsa {
+    display: flex;
+    position: absolute;
+    bottom: 1150px;
+    /* left: 0; */
+    margin-top: 24px;
+    text-decoration: underline;
+    line-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
 .country-text {
 	line-height: 32px;
 	font-size: 24px;
@@ -826,7 +838,6 @@ button {
 	flex-direction: column;
 	margin-bottom: 40px;
 }
-
 .display-none{
 	display: none;
 }
@@ -837,11 +848,9 @@ button {
 		width: auto;
 		margin-left: 36px;
 	}
-
 	.space{
 		padding: 0 40px;
 	}
-
 	.register{
 		padding: 12px 16px;
 		min-height: 48px;
@@ -855,18 +864,15 @@ button {
 		width: auto;
 		padding: 12px 16px;
 	}
-
 	.login svg{
 		width: 20px;
 		height: 20px;
 	}
-
 	.login-text{
 		margin-left: 4px;
 		visibility: visible;
 		width: auto;
 	}
-
 	.main-background{
 		visibility: hidden;
 	}
@@ -890,12 +896,10 @@ button {
 		line-height: 64px;
 		max-width: 60%;
 	}
-
 	.delivery-address-fixed{
 		min-width: 548px;
 	}
 	.delivery-address{
-	
 		padding-right: 8px;
 	}
 	.delivery-address-field{
@@ -908,12 +912,9 @@ button {
 		align-items: center;
 		justify-content: flex-start;
 		margin-top: 40px;
-
 	}
-
 	.delivery-now{	
 		display: inline-flex;
-		
 	}
 	.search{
 		width: auto;
@@ -926,7 +927,6 @@ button {
 	.download-app{
 		display: none;
 	}
-
 	.more-sections{
 		margin-left: 40px;
 		margin-right: 40px;
@@ -941,7 +941,6 @@ button {
 		flex-direction: row;
 		padding-bottom: 120px;	
 	}
-
 	.more-sections-images{
 		width: 100%;
 
@@ -958,7 +957,6 @@ button {
 		font-size: 28px;
 		line-height: 36px;
 	}
-
 	.display-none{
 		display: block;
 	}
@@ -967,7 +965,6 @@ button {
 		grid-template-rows: repeat(6, 1fr);
 		gap: 24px;
 		grid-auto-flow: column;
-
 	}
 	.more-sections-map {
 		margin: 24px 0px;
@@ -983,5 +980,29 @@ button {
 		font-size: 36px;
 		line-height: 44px;
 	}
-	
+	.footer {
+		min-width: 1024px;
+		max-width: 1920px;
+		padding: 64px 40px 80px;
+		background-color: #ffffff;
+		position: relative;
+	}
+	.footer-imgs-all{
+		flex: 2;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.footer-download{
+		margin-bottom: 0;
+	}
+	.footer-container{
+		display: flex;
+		margin-bottom: 40px;
+	}
+	.fullscreen{
+		flex: 1;
+		margin-bottom: 0;
+	}
 }
