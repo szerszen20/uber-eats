@@ -827,7 +827,9 @@ button {
 	margin-bottom: 40px;
 }
 
-
+.display-none{
+	display: none;
+}
 
 @media (min-width: 1200px){
 	.name{
@@ -956,4 +958,30 @@ button {
 		font-size: 28px;
 		line-height: 36px;
 	}
+
+	.display-none{
+		display: block;
+	}
+	.more-sections-cities{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		gap: 24px;
+		grid-auto-flow: column;
+
+	}
+	.more-sections-map {
+		margin: 24px 0px;
+		height: 360px;
+	}
+	.country-list {
+		margin-top: 24px;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(8, 1fr);
+		gap: 24px;
+	}
+	.country-text{
+		font-size: 36px;
+		line-height: 44px;
+	}
+	
 }
