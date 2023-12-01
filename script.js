@@ -16,24 +16,61 @@
 
 
   function openAddress() {
-    document.getElementById("address").style.display = "flex";
-    document.body.style.overflow = "hidden";
-  }
+    if (window.innerWidth < 700) {
+        document.getElementById("address").style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
 
-  function closeAddress() {
-    document.getElementById("address").style.display = "none";
-    document.body.style.overflow = "auto";
-  }
+function closeAddress() {
+    if (window.innerWidth < 700) {
+        document.getElementById("address").style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
 
-  function openNow() {
-    document.getElementById("now").style.display = "flex";
-    document.body.style.overflow = "hidden";
-  }
+function openNow() {
+    if (window.innerWidth < 700) {
+        document.getElementById("now").style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
 
-  function closeNow() {
-    document.getElementById("now").style.display = "none";
-    document.body.style.overflow = "auto";
+function closeNow() {
+    if (window.innerWidth < 700) {
+        document.getElementById("now").style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
+
+function toggleClearButton() {
+  var inputElement = document.querySelector('.delivery-address-input');
+  var clearButton = document.getElementById('clearBtn');
+
+  console.log("Input value:", inputElement.value.trim());
+
+  if (inputElement.value.trim() !== "") {
+      console.log("Showing clear button");
+      clearButton.style.display = "block";
+  } else {
+      console.log("Hiding clear button");
+      clearButton.style.display = "none";
   }
+}
+
+function clearInput() {
+  var inputElement = document.querySelector('.delivery-address-input');
+  console.log("Clearing input value");
+  inputElement.value = "";
+  toggleClearButton(); // Hide the clear button after clearing the input
+}
+
+// Initial state
+toggleClearButton();
+
+// Change 'input' event to 'keyup'
+var inputElement = document.querySelector('.delivery-address-input');
+inputElement.addEventListener('keyup', toggleClearButton);
 
 
 
@@ -45,10 +82,7 @@
   }
 
 
-
     checkScreenWidth();
-
-   
 
     function checkScreenWidth() {
 
