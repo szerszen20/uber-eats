@@ -329,6 +329,7 @@ button {
 .hamburger-container.open2 {
 	visibility: visible;
 	transition: 0.25s;
+	z-index: 6;
 }
 .hamburger-menu-overlay {
 	position: fixed;
@@ -868,8 +869,39 @@ button {
 		font-weight: 500;
 		margin-left:8px;
 		margin-right: 16px;
-
-		
+}
+.delivery-now-list-display{
+	display: none;
+	position: absolute;
+	top:160px;
+	padding: 8px 0px 16px;
+	background: #ffffff;
+	flex-direction: column;
+}
+.list-display-fields{
+	outline: none;
+	padding: 8px 16px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	color: #000000;
+}
+.svg-field{
+	height: 32px;
+	width: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.svg-field-size{
+	width: 20px;
+	height: 20px;
+}
+.text-field{
+	margin-left: 8px;
+	font-size: 16px;
+	white-space: nowrap;
+	font-weight: 500;
 }
 
 @media (min-width: 1200px){
@@ -1082,5 +1114,9 @@ button {
 		appearance: none;
 		width: 100%;
 		height: 60%;
+	}
+	.delivery-now-open{
+		padding: 24px;
+		
 	}
 }

@@ -171,7 +171,7 @@
 				</div>
 			</div>
 
-			<button aria-label="Zamknij" data-testid="close-button" class="button-close-x" onclick="closeNow()">
+			<button aria-label="Zamknij" data-testid="close-button" class="button-close-x" onclick="closeNow(), closeNowfull()">
 				<div class="button-close-x-position">
 					<svg
 						width="24px"
@@ -298,8 +298,8 @@
 						</div>
 					</a>
 				</div>
-
-				<a class="delivery-now" onclick="openNow()">
+	<div class="delivery-now-list">
+				<a class="delivery-now" onclick="openNow(),  openList()">
 					<div class="delivery-now-field">
 						<div class="delivery-now-icon">
 							<div class="delivery-now-icon-size">
@@ -340,7 +340,27 @@
 						</div>
 					</div>
 				</a>
-
+			<div class="delivery-now-list-display" id="list">
+				<button tabindex="-1" id="first-button" class="list-display-fields">
+					<div class="svg-field">
+						<div class="svg-field-size">
+						<svg width="20px" height="20px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2.83398C6.91671 2.83398 2.83337 6.91732 2.83337 12.0007C2.83337 17.084 6.91671 21.1673 12 21.1673C17.0834 21.1673 21.1667 17.084 21.1667 12.0007C21.1667 6.91732 17.0834 2.83398 12 2.83398ZM17 13.6673H10.3334V5.33398H12.8334V11.1673H17V13.6673Z" fill="currentColor"></path>
+						</svg>
+						</div>
+					</div>
+					<div class="text-field">Dostarcz teraz</div>
+				</button>
+				<button tabindex="-1" id="second-button" class="list-display-fields" onclick="openNowfull()">
+					<div class="svg-field">
+						<div class="svg-field-size">
+							<svg width="20px" height="20px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.1666 8.66732V5.33398H18.6666V2.83398H16.1666V5.33398H7.83325V2.83398H5.33325V5.33398H2.83325V8.66732H21.1666ZM21.1666 21.1673H2.83325V10.334H21.1666V21.1673ZM8.66658 13.6673H6.16658V16.1673H8.66658V13.6673Z" fill="currentColor"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="text-field">Zaplanuj na później</div>
+				</button>
+			</div>	
+		</div>
 				<a class="search" onclick="openAddress()">Wyszukaj restauracje</a>
 			</div>
 				<div class="or-login">

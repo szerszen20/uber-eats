@@ -42,10 +42,44 @@ function closeNow() {
         document.body.style.overflow = "auto";
     }
 }
+function openNowfull() {
+  if (window.innerWidth >= 1200) {
+      document.getElementById("now").style.display = "flex";
+      document.body.style.overflow = "hidden";
+  }
+}
+
+function closeNowfull() {
+  if (window.innerWidth >= 1200) {
+      document.getElementById("now").style.display = "none";
+      document.body.style.overflow = "auto";
+  }
+}
+
+function openList() {
+  if (window.innerWidth >= 1200) {
+    let listElement = document.getElementById("list");
+    
+    // Sprawdzanie aktualnego stanu widoczności
+    let isListVisible = getComputedStyle(listElement).display === "flex";
+    
+    if (!isListVisible) {
+      listElement.style.display = "flex";
+    } else {
+      listElement.style.display = "none";
+    }
+  }
+}
+
+document.getElementById("first-button").addEventListener("click", function() {
+  let listElement = document.getElementById("list");
+  listElement.style.display = "none";
+});
+
 
 function toggleClearButton() {
-  var inputElement = document.querySelector('.delivery-address-input');
-  var clearButton = document.getElementById('clearBtn');
+  let inputElement = document.querySelector('.delivery-address-input');
+  let clearButton = document.getElementById('clearBtn');
 
   console.log("Input value:", inputElement.value.trim());
 
@@ -59,7 +93,7 @@ function toggleClearButton() {
 }
 
 function clearInput() {
-  var inputElement = document.querySelector('.delivery-address-input');
+  let inputElement = document.querySelector('.delivery-address-input');
   console.log("Clearing input value");
   inputElement.value = "";
   toggleClearButton(); // Hide the clear button after clearing the input
