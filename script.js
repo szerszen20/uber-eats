@@ -159,6 +159,12 @@ inputElement.addEventListener('keyup', toggleClearButton);
     }
 
 
+    function toggleClass(field) {
+      let element = document.getElementById(field);
+      element.classList.toggle('field-focus');
+    }
+
+
 
 
     window.addEventListener('scroll', checkScreenWidth);

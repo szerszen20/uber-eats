@@ -1113,6 +1113,10 @@ button {
 		width: 100%;
 		height: 60%;
 	}
+	.field-focus{
+		box-shadow: rgb(39, 110, 241) 0 -2px 0 inset;
+		transition: 0.3s;
+	}
 	.delivery-now-open{
 		padding: 24px;
 		
