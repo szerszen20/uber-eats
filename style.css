@@ -317,7 +317,6 @@ button {
 	cursor: pointer;
 }
 .hamburger-container {
-	transition: 0.25s;
 	position: absolute;
 	background: rgba(38, 38, 38, 0.8);
 	z-index: 60;
@@ -328,7 +327,6 @@ button {
 
 .hamburger-container.open2 {
 	visibility: visible;
-	transition: 0.25s;
 	z-index: 6;
 }
 .hamburger-menu-overlay {
@@ -347,7 +345,7 @@ button {
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 500px;
-	transition: 0.5s;
+	transition: 0.6s;
 	transform: translateX(-100%);
 }
 
