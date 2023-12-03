@@ -125,6 +125,8 @@ inputElement.addEventListener('keyup', toggleClearButton);
       let delivery = document.getElementById('delivery');
       let field = document.getElementById('field');
       let fix = document.getElementById("delivery-fix");
+      let originalParent = delivery.parentNode;
+      let navbarC = document.getElementById("navbarC");
    
       if (screenWidth < 700 && window.scrollY > 210) {
         delivery.classList.remove("delivery-address");
@@ -134,7 +136,7 @@ inputElement.addEventListener('keyup', toggleClearButton);
         delivery.classList.add("delivery-active");
         field.classList.add("field-active");
         fix.classList.add("fixed-active");
-        console.log("if if if  telefon");
+
       } else {
         delivery.classList.add("delivery-address");
         field.classList.add("delivery-address-field");
@@ -143,30 +145,49 @@ inputElement.addEventListener('keyup', toggleClearButton);
         delivery.classList.remove("delivery-active");
         field.classList.remove("field-active");
         fix.classList.remove("fixed-active");
-        console.log("else telefon");
+
       }
 
       if (screenWidth >= 1200 && window.scrollY > 10) {
         navbar.classList.add("navbar-fullscreen");
-        console.log('Ekran o szerokości min. 1200px');
-
-
       }else {
         navbar.classList.remove("navbar-fullscreen");
-        console.log('Ekran o szerokości mniejszej niż 1200px');
       }
 
+      if (screenWidth >= 1200 && window.scrollY > 500) {
+        document.getElementById("delivery-fix-navbar").style.display = "flex";
+      }else {
+        document.getElementById("delivery-fix-navbar").style.display = "none";
+      }
+
+
+
+              // if (screenWidth >= 1200 && window.scrollY >= 500) {
+              //       // Sprawdź, czy element nie został już przeniesiony
+              //       if (!navbarC.contains(delivery)) {
+              //           navbarC.appendChild(delivery);
+              //       }
+              //   } else {
+              //       // Jeśli przewinięcie jest mniejsze niż 500px, przenieś z powrotem
+              //       if (navbarC.contains(delivery)) {
+              //           originalParent.appendChild(delivery);
+              //       }
+              //   }
+
+                
+
     }
 
-
-    function toggleClass(field) {
+    function toggleClass(field, fieldN) {
       let element = document.getElementById(field);
       element.classList.toggle('field-focus');
+      
+      let element2 = document.getElementById(fieldN);
+      element2.classList.toggle('field-focus');
     }
-
-
 
 
     window.addEventListener('scroll', checkScreenWidth);
 
    window.addEventListener('resize', checkScreenWidth);
+
