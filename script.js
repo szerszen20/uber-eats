@@ -41,20 +41,20 @@ function closeNow() {
         document.getElementById("now").style.display = "none";
         document.body.style.overflow = "auto";
     }
+    if (window.innerWidth >= 1200) {
+      document.getElementById("now").style.display = "none";
+      document.body.style.overflow = "auto";
+      document.getElementById("nowbackground").style.visibility = "hidden";
+  }
 }
 function openNowfull() {
   if (window.innerWidth >= 1200) {
       document.getElementById("now").style.display = "flex";
       document.body.style.overflow = "hidden";
+      document.getElementById("nowbackground").style.visibility = "visible";
   }
 }
 
-function closeNowfull() {
-  if (window.innerWidth >= 1200) {
-      document.getElementById("now").style.display = "none";
-      document.body.style.overflow = "auto";
-  }
-}
 
 function openList() {
   if (window.innerWidth >= 1200) {
@@ -71,7 +71,12 @@ function openList() {
   }
 }
 
-document.getElementById("first-button").addEventListener("click", function() {
+document.getElementById("first-button").addEventListener("click", function () {
+  let listElement = document.getElementById("list");
+  listElement.style.display = "none";
+});
+
+document.getElementById("second-button").addEventListener("click", function () {
   let listElement = document.getElementById("list");
   listElement.style.display = "none";
 });
@@ -103,7 +108,7 @@ function clearInput() {
 toggleClearButton();
 
 // Change 'input' event to 'keyup'
-var inputElement = document.querySelector('.delivery-address-input');
+const inputElement = document.querySelector('.delivery-address-input');
 inputElement.addEventListener('keyup', toggleClearButton);
 
 

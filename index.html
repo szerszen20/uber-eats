@@ -58,8 +58,10 @@
 				</div>
 			</button>
 		</div>
-
+		<div class="delivery-background" id="nowbackground" onclick="closeNow()"></div>
+		<div class="delivery-now-fullscreen">
 		<div class="delivery-now-open" id="now">
+			
 			<div class="delivery-address-display">
 				<h1 class="now-display-text">Wybierz godzinę</h1>
 
@@ -161,7 +163,7 @@
 					</div>
 				</div>
 
-				<div>
+				<div class="now-bottom-container">
 					<div class="now-bottom-items">
 						<button class="now-shedule">Zaplanuj</button>
 						<button class="now-shedule" style="background: #eeeeee; color: #000000; margin-bottom: 0px">
@@ -171,7 +173,7 @@
 				</div>
 			</div>
 
-			<button aria-label="Zamknij" data-testid="close-button" class="button-close-x" onclick="closeNow(), closeNowfull()">
+			<button aria-label="Zamknij" data-testid="close-button" class="button-close-x" onclick="closeNow()">
 				<div class="button-close-x-position">
 					<svg
 						width="24px"
@@ -188,7 +190,7 @@
 				</div>
 			</button>
 		</div>
-
+	</div>
 		<div class="hamburger-container" id="hamburger" onclick="closehamburger()"></div>
 			<div class="hamburger-menu-overlay" id="menu">
 				<div class="hambuger-text">
@@ -269,7 +271,7 @@
 										</defs>
 									</svg>
 									<div class="delivery-address-text">Wpisz adres dostawy</div>
-									<input class="delivery-address-input" id="delivery-address-input" value="" placeholder="Wpisz adres dostawy" style="background-color: #EEEEEE;">
+									<input class="delivery-address-input" id="delivery-address-input2" value="" placeholder="Wpisz adres dostawy" style="background-color: #EEEEEE;">
 									<button class="clear-button" id="clearBtn" onclick="clearInput()">Wyczyść</button>
 								</div>
 							</a>
@@ -314,7 +316,7 @@
 								</defs>
 							</svg>
 							<div class="delivery-address-text">Wpisz adres dostawy</div>
-							<input class="delivery-address-input" id="delivery-address-input" value="" placeholder="Wpisz adres dostawy">
+							<input class="delivery-address-input" id="delivery-address-input1" value="" placeholder="Wpisz adres dostawy">
 							<button class="clear-button" id="clearBtn" onclick="clearInput()">Wyczyść</button>
 						</div>
 					</a>
