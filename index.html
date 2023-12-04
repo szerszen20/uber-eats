@@ -249,6 +249,7 @@
 			<div class="navbar" id="navbar">
 				<div class="space">
 					<div class="navbar-containter" id="navbarC">
+						<div class="nav-left-items">
 						<button aria-label="Główne menu nawigacji" class="navbar-button" onclick="openhamburger()">
 							<svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
 								<path
@@ -256,10 +257,10 @@
 							</svg>
 						</button>
 						<a><img class="name" src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg" /></a>
+					</div>
 
-
-						<div id="delivery-fix-navbar" class="delivery-address-fixed none-fullscreen">
-							<a class="delivery-address" onclick="openAddress()" style="width: 720px">
+						<div id="delivery-fix-navbar" class="delivery-address-fixed none-fullscreen" style="min-width: unset;">
+							<a class="delivery-address" onclick="openAddress()" style="width: 100%; max-width: 722px; min-width: 316px;">
 								<div class="delivery-address-field" id="fieldN" onclick="toggleClass('fieldN')" style="background-color: #EEEEEE;">
 									<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="delivery-address-icon">
 										<g clip-path="url(#clip0)">

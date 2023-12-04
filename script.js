@@ -41,14 +41,14 @@ function closeNow() {
         document.getElementById("now").style.display = "none";
         document.body.style.overflow = "auto";
     }
-    if (window.innerWidth >= 1200) {
+    if (window.innerWidth >= 800) {
       document.getElementById("now").style.display = "none";
       document.body.style.overflow = "auto";
       document.getElementById("nowbackground").style.visibility = "hidden";
   }
 }
 function openNowfull() {
-  if (window.innerWidth >= 1200) {
+  if (window.innerWidth >= 800) {
       document.getElementById("now").style.display = "flex";
       document.body.style.overflow = "hidden";
       document.getElementById("nowbackground").style.visibility = "visible";
@@ -57,7 +57,7 @@ function openNowfull() {
 
 
 function openList() {
-  if (window.innerWidth >= 1200) {
+  if (window.innerWidth >= 800) {
     let listElement = document.getElementById("list");
     
     // Sprawdzanie aktualnego stanu widoczności
@@ -173,13 +173,13 @@ document.querySelectorAll('.clear-button').forEach(function (clearButton) {
 
       }
 
-      if (screenWidth >= 1200 && window.scrollY > 10) {
+      if (screenWidth >= 800 && window.scrollY > 10) {
         navbar.classList.add("navbar-fullscreen");
       }else {
         navbar.classList.remove("navbar-fullscreen");
       }
 
-      if (screenWidth >= 1200 && window.scrollY > 500) {
+      if (screenWidth >= 800 && window.scrollY > 500) {
         document.getElementById("delivery-fix-navbar").style.display = "flex";
       }else {
         document.getElementById("delivery-fix-navbar").style.display = "none";
