@@ -82,35 +82,55 @@ document.getElementById("second-button").addEventListener("click", function () {
 });
 
 
-function toggleClearButton() {
-  let inputElement = document.querySelector('.delivery-address-input');
-  let clearButton = document.getElementById('clearBtn');
-
-  console.log("Input value:", inputElement.value.trim());
-
-  if (inputElement.value.trim() !== "") {
-      console.log("Showing clear button");
-      clearButton.style.display = "block";
-  } else {
-      console.log("Hiding clear button");
-      clearButton.style.display = "none";
+function toggleClass(elementId) {
+  let element = document.getElementById(elementId);
+  
+  if (element) {
+    element.classList.toggle('active');
   }
 }
 
-function clearInput() {
-  let inputElement = document.querySelector('.delivery-address-input');
+function toggleClearButton(inputElement, clearButton) {
+  console.log("Input value:", inputElement.value.trim());
+
+  if (inputElement.value.trim() !== "") {
+    clearButton.style.display = "block";
+  } else {
+    clearButton.style.display = "none";
+  }
+}
+
+function clearInput(inputElement, clearButton) {
   console.log("Clearing input value");
   inputElement.value = "";
-  toggleClearButton(); // Hide the clear button after clearing the input
+  toggleClearButton(inputElement, clearButton); // Hide the clear button after clearing the input
 }
 
 // Initial state
-toggleClearButton();
+document.querySelectorAll('.delivery-address-field').forEach(function (fieldElement) {
+  let inputElement = fieldElement.querySelector('.delivery-address-input');
+  let clearButton = fieldElement.querySelector('.clear-button');
+
+  toggleClearButton(inputElement, clearButton);
+});
 
 // Change 'input' event to 'keyup'
-const inputElement = document.querySelector('.delivery-address-input');
-inputElement.addEventListener('keyup', toggleClearButton);
+document.querySelectorAll('.delivery-address-input').forEach(function (inputElement) {
+  inputElement.addEventListener('keyup', function () {
+    let fieldElement = inputElement.closest('.delivery-address-field');
+    let clearButton = fieldElement.querySelector('.clear-button');
+    toggleClearButton(inputElement, clearButton);
+  });
+});
 
+// Add click event for each clear button
+document.querySelectorAll('.clear-button').forEach(function (clearButton) {
+  clearButton.addEventListener('click', function () {
+    let fieldElement = clearButton.closest('.delivery-address-field');
+    let inputElement = fieldElement.querySelector('.delivery-address-input');
+    clearInput(inputElement, clearButton);
+  });
+});
 
 
   window.onscroll = function()
