@@ -1031,6 +1031,8 @@ button {
 	.more-sections-text-city {
 		font-size: 36px;
 		line-height: 36px;
+		display: flex;
+		justify-content: space-between;
 	}
 	.more-sections-p1 {
 		font-size: 28px;
@@ -1166,5 +1168,11 @@ button {
 		height: 100%;
 		z-index: 90; /* Ustaw wartość indeksu zawsze na wyższą niż elementy, które mają być pod spodem */
 		visibility: hidden;
+	}
+	.dn{
+		visibility: hidden;
+	}
+	.display-all-cities{
+		display: flex;
 	}
 }
