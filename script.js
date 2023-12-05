@@ -16,28 +16,28 @@
 
 
   function openAddress() {
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 800) {
         document.getElementById("address").style.display = "flex";
         document.body.style.overflow = "hidden";
     }
 }
 
 function closeAddress() {
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 800) {
         document.getElementById("address").style.display = "none";
         document.body.style.overflow = "auto";
     }
 }
 
 function openNow() {
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 800) {
         document.getElementById("now").style.display = "flex";
         document.body.style.overflow = "hidden";
     }
 }
 
 function closeNow() {
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 800) {
         document.getElementById("now").style.display = "none";
         document.body.style.overflow = "auto";
     }
@@ -153,7 +153,7 @@ document.querySelectorAll('.clear-button').forEach(function (clearButton) {
       let originalParent = delivery.parentNode;
       let navbarC = document.getElementById("navbarC");
    
-      if (screenWidth < 700 && window.scrollY > 210) {
+      if (screenWidth < 800 && window.scrollY > 210) {
         delivery.classList.remove("delivery-address");
         field.classList.remove("delivery-address-field");
         fix.classList.remove("delivery-address-fixed");

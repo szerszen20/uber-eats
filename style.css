@@ -403,6 +403,9 @@ button {
 	font-weight: 500;
 	box-sizing: border-box;
 }
+.hamburger-login:hover{
+	background: rgb(226, 226, 226);
+}
 .hamburger-info {
 	display: flex;
 	margin-top: 24px;
@@ -768,6 +771,7 @@ button {
 	grid-template-rows: repeat(15, 1fr);
 	gap: 24px 8px;
 	grid-auto-flow: column;
+	margin-bottom: 48px;
 }
 .country-list-text {
 	line-height: 24px;
@@ -781,6 +785,9 @@ button {
 	font-size: 16px;
 	cursor: pointer;
 	font-weight: 500;
+	display: flex;
+	position: absolute;
+	bottom: 0;
 }
 .footer {
 	border-top: 1px solid #e2e2e2;
@@ -1056,10 +1063,13 @@ button {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(8, 1fr);
 		gap: 24px;
+		margin-bottom: 0;
 	}
 	.country-text {
 		font-size: 36px;
 		line-height: 44px;
+		display: flex;
+		justify-content: space-between;
 	}
 	.footer {
 		min-width: 1024px;
@@ -1174,5 +1184,8 @@ button {
 	}
 	.display-all-cities{
 		display: flex;
+	}
+	.all-countries{
+		position: static
 	}
 }
