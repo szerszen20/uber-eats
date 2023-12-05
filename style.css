@@ -11,11 +11,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-p {
+h1,h2,h3,h4,p {
 	margin: 0;
 	font-weight: normal;
 }
@@ -236,7 +232,6 @@ button {
 	line-height: 24px;
 	font-weight: normal;
 	font-size: 16px;
-	font-family: UberMoveText, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .delivery-now {
 	background-color: #ffffff;
@@ -276,7 +271,6 @@ button {
 	flex-grow: 1;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: UberMoveText, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #000000;
 	display: flex;
 }
@@ -316,7 +310,6 @@ button {
 .or-login {
 	font-weight: 500;
 	font-size: 14px;
-	font-family: UberMoveText, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-top: 24px;
 }
 .or-login a {
@@ -324,14 +317,13 @@ button {
 	cursor: pointer;
 }
 .hamburger-container {
-	position: absolute;
+	position: fixed;
 	background: rgba(38, 38, 38, 0.8);
 	z-index: 60;
 	width: 100%;
-	height: 375vh;
+	height: 100%;
 	visibility: hidden;
 }
-
 .hamburger-container.open2 {
 	visibility: visible;
 	z-index: 6;
@@ -347,7 +339,6 @@ button {
 	width: 250px;
 	background-color: #ffffff;
 	z-index: 7;
-	font-family: UberMoveText, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding-top: 24px;
 	padding-left: 24px;
 	padding-right: 24px;
@@ -570,7 +561,6 @@ button {
 	line-height: 40px;
 	margin-bottom: 24px;
 	font-weight: 700;
-	font-family: UberMove, sans-serif;
 }
 .now-date-container {
 	line-height: 24px;
@@ -740,18 +730,6 @@ button {
 	font-size: 16px;
 }
 .display-all-cities {
-	margin-top: 24px;
-	text-decoration: underline;
-	line-height: 20px;
-	font-size: 16px;
-	cursor: pointer;
-	font-weight: 500;
-}
-.display-all-cities-asdsadasdsa {
-	display: flex;
-	position: absolute;
-	bottom: 1150px;
-	/* left: 0; */
 	margin-top: 24px;
 	text-decoration: underline;
 	line-height: 20px;
@@ -980,7 +958,7 @@ button {
 	.text-order {
 		font-size: 52px;
 		line-height: 64px;
-		max-width: 60%;
+		max-width: 62%;
 	}
 	.delivery-address-fixed {
 		min-width: 548px;
@@ -1019,7 +997,7 @@ button {
 	}
 	.services-section {
 		padding: 80px 0 0 0;
-		z-index: -3;
+		z-index: 0;
 	}
 	.graphics {
 		margin-top: 0;
@@ -1056,7 +1034,6 @@ button {
 	}
 	.more-sections-map {
 		margin: 24px 0px;
-		height: 360px;
 	}
 	.country-list {
 		margin-top: 24px;
@@ -1100,10 +1077,13 @@ button {
 		text-align: start;
 		padding-top: 40px;
 		border-top: 2px solid #e2e2e2;
+		margin-bottom: 16px;
+		height: auto;
 	}
 	.documents-text {
 		margin-left: 40px;
 		height: 20px;
+		margin-bottom: 0;
 	}
 	.mini-icons {
 		padding-top: 0;
@@ -1176,16 +1156,13 @@ button {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		z-index: 90; /* Ustaw wartość indeksu zawsze na wyższą niż elementy, które mają być pod spodem */
+		z-index: 90;
 		visibility: hidden;
 	}
 	.dn{
 		visibility: hidden;
 	}
-	.display-all-cities{
-		display: flex;
-	}
 	.all-countries{
-		position: static
+		position: static;
 	}
 }
