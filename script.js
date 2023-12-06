@@ -149,9 +149,8 @@ document.querySelectorAll('.clear-button').forEach(function (clearButton) {
       let navbar = document.getElementById("navbar");
       let delivery = document.getElementById('delivery');
       let field = document.getElementById('field');
-      let fix = document.getElementById("delivery-fix");
-      let originalParent = delivery.parentNode;
-      let navbarC = document.getElementById("navbarC");
+      let fix = document.getElementById('delivery-fix');
+      let now = document.getElementById('delivery-now-list');
    
       if (screenWidth < 800 && window.scrollY > 210) {
         delivery.classList.remove("delivery-address");
@@ -161,7 +160,7 @@ document.querySelectorAll('.clear-button').forEach(function (clearButton) {
         delivery.classList.add("delivery-active");
         field.classList.add("field-active");
         fix.classList.add("fixed-active");
-
+        now.style.marginTop = "96px";
       } else {
         delivery.classList.add("delivery-address");
         field.classList.add("delivery-address-field");
@@ -170,7 +169,7 @@ document.querySelectorAll('.clear-button').forEach(function (clearButton) {
         delivery.classList.remove("delivery-active");
         field.classList.remove("field-active");
         fix.classList.remove("fixed-active");
-
+        now.style.marginTop = "unset";
       }
 
       if (screenWidth >= 800 && window.scrollY > 10) {
